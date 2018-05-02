@@ -1,3 +1,4 @@
+/*Custom Flyout Css*/
 ion-header{
 	z-index: 1;
 }
@@ -27,7 +28,7 @@ ion-header{
 	    width: 100%;
 	    left: 0;
 	    padding: 8px 16px 16px 16px;
-	    bottom: -350px;
+	    bottom: -500px;
 	    -webkit-transition: bottom 0.4s;
 	    transition: bottom 0.4s;
 
@@ -37,4 +38,51 @@ ion-header{
 }
 .bottomZero{
 	bottom: 0;
+}
+
+/*Accordion control Css*/
+.accordionContainer{
+	max-height: 300px;
+    overflow-y: auto;
+	
+	.accordion {
+	    background-color: #eee;
+	    color: #444;
+	    cursor: pointer;
+	    padding: 18px;
+	    width: 100%;
+	    border: none;
+	    text-align: left;
+	    outline: none;
+	    font-size: 15px;
+	    transition: 0.4s;
+	}
+
+	.active, .accordion:hover {
+	    background-color: #ccc;
+	}
+
+	.accordion:after {
+	    content: '\002B';
+	    color: #777;
+	    font-weight: bold;
+	    float: right;
+	    margin-left: 5px;
+	}
+
+	.active:after {
+	    content: "\2212";
+	}
+
+	.panel {
+	    padding: 0;
+	    background-color: white;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.2s ease-out;
+
+	    .checkbox-md{
+	    	margin: 9px 20px 9px 18px !important;
+	    }
+	}
 }

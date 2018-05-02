@@ -23,8 +23,54 @@
           <ion-input></ion-input>
         </ion-item>
         <br>
-        Place additional contents
+
+        <!-- Acordion Control -->
+        <div class="accordionContainer">
+          <button class="accordion">Checkbox list 1</button>
+          <div class="panel">
+            <div>
+              <ion-item>
+                <ion-label>Item 1</ion-label>
+                <ion-checkbox checked="true"></ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-label>Item 2</ion-label>
+                <ion-checkbox checked="false"></ion-checkbox>
+              </ion-item>
+            </div>
+          </div>
+
+          <button class="accordion">Checkbox list 2</button>
+          <div class="panel">
+            <div>
+              <ion-item>
+                <ion-label>Item 1</ion-label>
+                <ion-checkbox checked="false"></ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-label>Item 2</ion-label>
+                <ion-checkbox checked="false"></ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-label>Item 3</ion-label>
+                <ion-checkbox checked="false"></ion-checkbox>
+              </ion-item>
+            </div>
+          </div>
+
+          <button class="accordion">Checkbox list 3</button>
+          <div class="panel">
+            <div>
+              <ion-item>
+                <ion-label>Item 1</ion-label>
+                <ion-checkbox checked="false"></ion-checkbox>
+              </ion-item>
+            </div>
+          </div>
+        </div>
+        <br>
         <button ion-button full (click)="mapActionContentToggle()">Save</button>
     </div>
   </div>
+
 </ion-content>
