@@ -22,12 +22,19 @@ ion-header{
     }
 }
 .actionContent{
+		.flyoutHeader{
+			font-size: 16px;
+		    color: #585858;
+		    font-weight: 500;
+		    margin: 0;
+		}
+
 		position: fixed;
 	    z-index: 8;
 	    background: #fff;
 	    width: 100%;
 	    left: 0;
-	    padding: 8px 16px 16px 16px;
+	    padding: 16px;
 	    bottom: -500px;
 	    -webkit-transition: bottom 0.4s;
 	    transition: bottom 0.4s;
@@ -44,7 +51,7 @@ ion-header{
 .accordionContainer{
 	max-height: 300px;
     overflow-y: auto;
-	
+
 	.accordion {
 	    background-color: #eee;
 	    color: #444;
