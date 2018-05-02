@@ -1,3 +1,40 @@
-page-hello-ionic {
+ion-header{
+	z-index: 1;
+}
+.scroll-content{
+	z-index: auto;
+	overflow-y: auto;
+}
+.mapActionContainer{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: rgba(0,0,0,0);
 
+    .backgroundOverlay{
+    	background: rgba(0,0,0,0.3);
+    	height: 100%;
+    	cursor: pointer;
+    }
+}
+.actionContent{
+		position: fixed;
+	    z-index: 8;
+	    background: #fff;
+	    width: 100%;
+	    left: 0;
+	    padding: 8px 16px 16px 16px;
+	    bottom: -350px;
+	    -webkit-transition: bottom 0.4s;
+	    transition: bottom 0.4s;
+
+	    ion-item{
+	    	padding-left: 0;
+	    }
+}
+.bottomZero{
+	bottom: 0;
 }

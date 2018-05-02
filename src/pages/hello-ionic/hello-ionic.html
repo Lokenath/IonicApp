@@ -10,16 +10,21 @@
 
 <ion-content padding>
 
-  <h3>Welcome to your first Ionic app!</h3>
+  <button ion-button color="primary" (click)="mapActionContentToggle()">Show Bottom Flyout</button>
 
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
-  </p>
-
+  <!-- Custom Action Sheet -->
+  <div class="customActionContainerOuterLayer">
+    <div class="mapActionContainer" *ngIf="showMapActionContent">
+      <div class="backgroundOverlay" (click)="mapActionContentToggle()"></div>
+    </div>
+    <div class="actionContent" [ngClass]="{'bottomZero': showMapActionContent}">
+        <ion-item>
+          <ion-label color="primary" floating>Floating Label 1</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <br>
+        Place additional contents...
+        <button ion-button full (click)="mapActionContentToggle()">Save</button>
+    </div>
+  </div>
 </ion-content>
